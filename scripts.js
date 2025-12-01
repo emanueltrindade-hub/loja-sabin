@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
 
 
+    
     // Fechar aviso
 
     const avisoSeletor = document.getElementById('aviso');
@@ -148,6 +149,4 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 
     
-    });
-
-      
+    });     

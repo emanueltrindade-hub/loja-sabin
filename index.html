@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<heaheadd>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Loja Sabin</title>
@@ -23,31 +23,43 @@
             museo: ['Museo Sans Rounded'],
           },
         },
-      },
+
+        screens: {
+          'md' : {'max' : '767px'}
+        },
+               
     }
+  }
   </script>
  
 
 </head>
 
-<body class="">
+<body >
 
-<div>
+<div class=" md:grid md:justify-center md:items-center md:w-[767px] md:overflow-hidden md:px-1">
 
 
-  <header id="cablh" class=" relative bg-white z-40 w-full px-4 font-sans text-[12px] leading-5 h-[5vh]">
-    <div class="w-[1108px] mx-auto flex items-center px-0 h-full text-sm text-gray-700 gap-x-20 justify-between">
-      <div class="flex gap-x-[24px]">
+  <header id="cablh" class=" relative bg-white z-40 w-full px-4 font-sans text-[12px] leading-5 h-[5vh]
+   md:relative md:bg-wite md:z-0 md:p-0 md:h-[10vh] md:flex md:h-auto md:mt-[100px] md:px-0 md:gap-2 md:w[767px]">
+    
+   <div class="w-full max-w-[1108px] mx-auto flex items-center px-0 h-full text-sm text-gray-700 gap-x-20 justify-between
+    md:w-[767px] md:gap-0 md:gap-x-0 md:text-[14px] md:justify-between md:items-center md:mx-auto md:h-auto md:flex">
+
+      <div class="flex gap-x-[24px] md:hidden">
         <a href="https://sabin.com.br/unidade/brasilia-df/" class="text-black hover:text-red-600 text-[12px]">PORTAL SABIN</a>
         <a href="https://laudos.sabin.com.br/shift/lis/sabin/elis/gestao/sabin.portal.login.csp" class="hover:text-red-700 text-[12px]">RESULTADO DE EXAMES</a>
         <a href="https://blog.sabin.com.br/" class="text-black hover:text-red-600 text-[12px]">IR PARA O BLOG</a>
       </div>
 
 
-      <div id="seleEstado" class="relative flex items-center text-white px-6 py-[0.55vh]">
-        <span class="font-sans text-[0.875rem] mr-1">Você está em</span>
+      <div id="seleEstado" class="relative flex items-center text-white px-6 py-[0.55vh]
+      md:relative md:items-center md:px-0 md:py-0 md:w-auto">
+        <span class="font-sans text-[0.875rem] mr-1 md:mr-0 md:text-[14px]">Você está em</span>
 
-        <select name="select" id="seletorDeEstado" class="absolute w-[14vw] h-[1.8vw] text-[0.875rem] cursor-pointer text-with bg-[#5C5F69] font-'Roboto' rounded-full px-6">
+        <select name="select" id="seletorDeEstado" class="absolute w-[14vw] h-[1.8vw] text-[0.875rem] cursor-pointer text-with bg-[#5C5F69] 
+        font-'Roboto' rounded-full px-6 
+        md:relative md:flex md:w-[400px] md:h-[100px] md:text-[50px]">
           <option selected>Brasília - DF</option>
           <option>Goiás</option>
           <option>Mato Grosso</option>
@@ -73,18 +85,25 @@
           <option>Rio de Janeiro</option>
           <option>São Paulo</option>
         </select>
+
       </div>
-      <div id="acessibilidade" class="flex items-center gap-4">
-        <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/10b294aa1d728b6901fa9c1834bcb9fc.svg" alt="troca cor do fundo" class="w-6 h-6">
-        <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/2e7b01942021ff8be164fa7aac29d108.svg" alt="libras" class="w-6 h-6">
+
+      <div id="acessibilidade" class="flex items-center gap-4 md:gap-4">
+        <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/10b294aa1d728b6901fa9c1834bcb9fc.svg" alt="troca cor do fundo" class="w-6 h-6 md:w-20 md:h-20">
+        <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/2e7b01942021ff8be164fa7aac29d108.svg" alt="libras" class="w-6 h-6 md:w-20 md:h-20">
       </div>
+
     </div>
   </header>
 
-  <nav id="topbar" class="sticky top-0 z-10 w-full h-[80px] border-t border-b px[104px]" style="background-color: rgb(247, 248, 252)">
+
+
+
+  <nav id="topbar" class="sticky top-0 z-10 w-full h-[80px] border-t border-b px[104px]
+   md:sticky md:top-0 md:z-1 md:mt-[60px] md:grid md:grid-cols-3 md:gap-2" style="background-color: rgb(247, 248, 252)">
 
     <div class="w-full max-w-[1108px] mx-auto h-full flex items-center justify-between">
-      <a href="https://loja.sabin.com.br/?___store=brasilia_df" class="flex items-center">
+      <a href="https://loja.sabin.com.br/?___store=brasilia_df" class="flex items-center md:col-start-1">
         <img src="https://loja.sabin.com.br/media/favicon/default/Logo_-_vermelha-4k.png" alt="sabin" class="w-[85.33px] h-auto" />
       </a>
 
@@ -134,11 +153,16 @@
   </nav>
 
 
+
+
+
   <main class="w-full flex flex-col items-center justify-center gap-6 px-4">
 
     <section class=" w-full max-w-[1108px]">
 
-      <section id="aviso" class="rounded-xlg border border-[#9B51DF] bg-[#ede5f2] flex justify-between justify-center items-center p-2 pr-6 h-[138px] relative z-0 gap-x-3 mt-8 px-[60px] rounded-lg font-sans">
+      <section id="aviso" class="rounded-xlg border border-[#9B51DF] bg-[#ede5f2] flex justify-between justify-center
+       items-center p-2 pr-6 h-[138px] relative z-0 gap-x-3 mt-8 px-[60px] rounded-lg font-sans
+       md:order-6">
         <div class="flex items-center gap-2 text-gray-900">
           <img id="balaoAviso" src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/0e8af05917ffd98754cd39ef4a4448fd.svg" class="w-[34px] h-[34px]" alt="aviso">
           <p id="textoPrincipal" class=" ml-[5px] text-[#444444] text-base"><strong>Fique atento!</strong><br>
@@ -1198,7 +1222,7 @@
   <section id="infonews" class="h-[250px] pt-[14px] px-[92px] bg-gray-50 text-gray-800">
     <div id="gradeInferior" class="flex justify-between justify-center items-center gap-10 text-left text-[18px] max-w-5xl mx-auto">
      
-      <div class="grid lg:grid-cols-4 gap-10">
+      <div class="grid grid-cols-4 gap-10">
             <div class="h-[202px] w-[182px] text-[16px]">
               <ul class="space-y-3 space-x-0">
                 <li class="flex items-center gap-2">
